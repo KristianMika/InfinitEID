@@ -47,12 +47,12 @@ def init(conn, nextcloud_id: str | None = None, admin_pin_set=False):
     handle_pk_and_cert_init(
         conn, nextcloud_id or CONFIG["NEXTCLOUD_ID"], "auth"
     )
-    print(
-        "[+] Creating SIGN keypair, obtaining",
-        "public key and storing certificate",
-    )
-    handle_pk_and_cert_init(
-        conn, nextcloud_id or CONFIG["NEXTCLOUD_ID"], "sign"
-    )
+    # print(
+    #     "[+] Creating SIGN keypair, obtaining",
+    #     "public key and storing certificate",
+    # )
+    # handle_pk_and_cert_init(
+    #     conn, nextcloud_id or CONFIG["NEXTCLOUD_ID"], "sign"
+    # )
 
     print("[+] Successfully finished!")

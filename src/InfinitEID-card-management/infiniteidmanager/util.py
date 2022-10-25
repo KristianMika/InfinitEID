@@ -204,7 +204,7 @@ def encode_pin(pin):
 
 
 def handle_pk_and_cert_init(
-    conn, nextcloud_id, operation: Literal["auth", "sign"]
+    conn, nextcloud_id, operation: Literal["auth"]
 ):
     # generate keypairs
     verify_pin(conn, CONFIG["ADMIN_PIN"], "admin")
